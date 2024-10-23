@@ -41,11 +41,10 @@
             </div>
         </div>
     </header>
-
     <!-- Main Content Section -->
-    <div class="container mx-auto mt-8 flex">
+    <div class=" container h-screen mt-8 flex fixed">
         <!-- Sidebar -->
-        <div class="w-1/5 bg-white p-6 rounded-lg shadow-md">
+        <div class="w-[20%] h-[100%] bg-white p-6 rounded-lg shadow-md">
             <h2 class="text-lg font-bold mb-4 text-gray-700">Category</h2>
             <ul class="space-y-2">
                 <li>
@@ -125,7 +124,7 @@
         </div>
 
         <!-- Product Grid (Right Side) -->
-        <div class="w-4/5 p-6">
+        <div class="w-4/5 p-6 bg-gray-200">
             <!-- Product items will be added here later -->
             <div class="text-center text-gray-500">
                 <p>Product grid will be displayed here.</p>

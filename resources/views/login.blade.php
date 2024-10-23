@@ -16,7 +16,7 @@
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
-    <div class="bg-white shadow-lg rounded-lg w-[1200px] h-[650px] flex relative">
+    <div class="bg-white shadow-lg rounded-lg w-[1200px] h-[650px] flex relative ">
         <div class="mt-10 absolute top-6 left-10 text-left">
             <h1 class="text-4xl font-bold">Login</h1>
             <p class="text-gray-800 text-lg">Welcome Back!</p>
