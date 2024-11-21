@@ -1,0 +1,32 @@
+
+
+input[type="checkbox"], input[type="radio"] { /* Custom checkbox and radio button styles */
+  appearance: none;
+  background-color: #ffffff;
+  margin: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #d1d5db;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before, input[type="radio"]::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #394A56   ;
+  clip-path: circle(50%);
+}
+
+input[type="checkbox"]:checked::before, input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+  border-color: #394A56;
+}
