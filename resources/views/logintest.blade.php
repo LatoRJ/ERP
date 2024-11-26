@@ -10,21 +10,21 @@
         body 
         {
             background-color: #394956;
-            ;
         }
     </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
-    <div class="bg-[#E7E8E7] shadow-lg rounded-lg w-[1200px] h-[650px] flex relative ">
-        <div class="mt-10 absolute top-6 left-10 text-left">
-            <h1 class="text-4xl justify-center font-bold">Login</h1>
-            <p class="text-gray-800 text-lg">Welcome Back!</p>
-        </div>
-
+    <div class="bg-[#E7E8E7] shadow-lg rounded-lg w-[1200px] h-[650px] flex relative">
+        
         <div class="w-1/2 h-full p-10 flex flex-col justify-center">
-            <form action="#" method="POST" class="space-y-6">
+            <!-- Adjusted Centered Login Heading Higher -->
+            <div class="text-center -mt-12 mb-6">
+                <h1 class="text-5xl font-bold">Login</h1>
+            </div>
 
+            <!-- Existing Form Code -->
+            <form action="#" method="POST" class="space-y-6">
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                     <input type="email" name="email" id="email" placeholder="Enter Email"
@@ -57,16 +57,15 @@
                     </button>
                 </div>
                 
-                
                 <p class="text-sm text-center text-black mt-6">
-                    Don't have an account? <a href="{{route('signup')}}" class="font-medium text-[#394A56] hover:text-[#22303F]">Sign up</a>
+                    Don't have an account? <a href="/signup" class="font-medium text-[#394A56] hover:text-[#22303F]">Sign up</a>
                 </p>
             </form>
         </div>
         
-        <div class="w-1/2 h-full  flex items-center justify-center ">
+        <div class="w-1/2 h-full flex items-center justify-center">
             <div class="w-full h-full shadow rounded-r bg-[#22303F]">
-                <img src="{{asset('img/pic1.png')}}" alt="" class="absolute right-2 w-[55%] h-auto">
+                <!-- <img src="{{asset('img/pic1.png')}}" alt="" class="absolute right-2 w-[55%] h-auto"> -->
             </div>
         </div>
     </div>

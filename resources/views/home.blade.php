@@ -14,7 +14,6 @@
     <!-- Navbar Section -->
     <header class="bg-white shadow-md py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo -->
             <div class="text-2xl font-bold text-[#22303F]">
                 <a href="#">AppleVerse</a>
             </div>
@@ -35,12 +34,47 @@
                 <a href="#" class="text-gray-600 hover:text-[#394A56]">
                     <i class='bx bx-heart text-2xl'></i>
                 </a>
-                <a href="#" class="text-gray-600 hover:text-[#394A56]">
-                    <i class='bx bx-user text-2xl'></i>
-                </a>
+
+                <!-- User Icon with Dropdown -->
+                <div class="relative">
+                    <!-- User Icon -->
+                    <button onclick="toggleDropdown()" class="flex items-center focus:outline-none">
+                        <i class='bx bx-user text-2xl'></i>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div id="userDropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            Log Out
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            <!-- JS for Toggle Dropdown -->
+            <script>
+            function toggleDropdown()
+            {
+            const dropdown = document.getElementById('userDropdown');
+            dropdown.classList.toggle('hidden');
+            }
+
+            window.addEventListener('click', function(event) 
+            {
+            const dropdown = document.getElementById('userDropdown');
+            const button = event.target.closest('button');
+
+            if (!dropdown.contains(event.target) && !button)
+                {
+                dropdown.classList.add('hidden');
+                }
+            });
+        </script>
             </div>
         </div>
     </header>
+
     <!-- Main Content Section -->
     <div class=" container h-screen mt-8 flex fixed">
         <!-- Sidebar -->
@@ -123,11 +157,10 @@
             </div>
         </div>
 
-        <!-- Product Grid (Right Side) -->
+        <!-- Product Grid -->
         <div class="w-4/5 p-6 bg-gray-200">
-            <!-- Product items will be added here later -->
             <div class="text-center text-gray-500">
-                <p>Product grid will be displayed here.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est veniam odit unde? Doloribus voluptates consequuntur exercitationem ducimus, totam nam ipsa numquam culpa modi eos, neque iure. Minus, iste laudantium?.</p>
             </div>
         </div>
     </div>
