@@ -20,9 +20,11 @@ Route::get('/logintest', function () {
 });
 
 // Sign Up
+/*
 Route::get('/signup', function () {
     return view('signup');
 });
+*/
 
 // Route for the homepage
 /*Route::get('/home', function () {

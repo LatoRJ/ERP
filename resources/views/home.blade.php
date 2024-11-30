@@ -160,7 +160,13 @@
         <!-- Product Grid -->
         <div class="w-4/5 p-6 bg-gray-200">
             <div class="text-center text-gray-500">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est veniam odit unde? Doloribus voluptates consequuntur exercitationem ducimus, totam nam ipsa numquam culpa modi eos, neque iure. Minus, iste laudantium?.</p>
+                    <div class="w-1/5 shadow-lg ">
+                        <p>ASDASD</p>
+                        <img src="" alt="">
+                        <div class="w-full h-auto">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, unde officia nisi saepe nobis quaerat praesentium reiciendis omnis fugit. Esse sequi laboriosam quis fugit provident exercitationem! Sunt maiores dolorem magni!</p>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
